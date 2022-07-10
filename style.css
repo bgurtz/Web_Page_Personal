@@ -36,10 +36,10 @@ section {
     align-items: center;
     text-align: center;
     
-    background-size: cover; /* Add this line */
-    background-position: center center; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
-    background-attachment: fixed; /* Add this line */
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
 }
 
 #hero .profile-img {
@@ -62,14 +62,32 @@ section h2 {
 
 section h3 {
     font-size: 24px;
-}f
+}
+
+p {
+    font-size: 18px;
+  }
 
 header a {
     text-decoration: none;
     color: black;
 }
 
-/* Add everything below here */ 
+.cards {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+  
+ .card {
+     flex: 0 1 24%;
+ }
+
 
 #hero {
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('http://briangurtz.com/wp-content/themes/canuck/images/headerdefault.jpg');

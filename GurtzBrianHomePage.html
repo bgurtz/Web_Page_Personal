@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Below this line in the Head Tags you will find all the meta information that was requied in week 1 ( WEBD121 B001 ) -->
 <head>
-    <meta charset="UTF-8">
-	<title>Brian Gurtz</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Personal Website">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Brian Gurtz">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/Bg-Logo" href="https://bg-innovation.com/wp-content/uploads/2021/08/trans-bg.jpg">
+    <link rel="icon" type="image/Bg-Logo" href="assets/images/bg_logo.jpg" alt="BG-Logo">
 </head>
+<!-- In the Header tag you will find a list that has 5 links to 5 pages of this site. 
+	 Added images to the assets file. The avatar will now be clickable and take the user to the resume page.  -->
 <body>
 	<header>
-		<img src="https://bg-innovation.com/wp-content/uploads/2021/08/trans-bg.jpg" class="profile-img">
+		<a href="#resume"><img src="assets/images/bg_logo.jpg" alt="BG-Logo" class="profile-img"></a>		
 		<nav>
 			<ul>
 				<li><a href="#hero">Home</a></li>
@@ -20,39 +26,43 @@
 		</nav>
 	</header>
 	<main>
+		<!-- Below is the landing section of the page when the user first goes to the site.  -->
 		<section id="hero">
 			<div class="section-inner">
-				<img src="http://briangurtz.com/wp-content/uploads/2019/05/image-2019-05-05-2.jpg" class="profile-img">
+				<a href="#resume"><img src="assets/images/brian.jpg" alt="Me" class="profile-img"></a>
 				<h1>Hi, I'm Brian Gurtz</h1>
-				<p>
-					<div style="max-width:600px; word-wrap:break-word;">
-					<h3>A dynamic, results-oriented person offering focused leadership and drive.
-					Consistently achieving performance goals through enthusiasm, tenacity and initiative</h3>
-					</div>
-				</p>
-			</div>
+				<div class="hero">
+					A dynamic, results-oriented person offering focused leadership and drive.
+					Consistently achieving performance goals through enthusiasm, tenacity and initiative.
+				</div>
 		</section>
+		<!-- This section is the about me page that has some general information about my history and hobbies. -->
 		<section id="about">
 			<div class="section-inner">
 				<h2>About me</h2>
-				<div style="max-width:800px; word-wrap:break-word;">
-					<p>I was born in a small town in Indiana, being from a military family we moved to a number of bases. 
-						My teen years were spent in Karlsruhe Germany. I keep wanting to say West Germany, because that is what it was while i was living there. 
-						I remember when the Berlin Wall came crashing down in 1989. I had a front row seat to a huge milestone in history and was able to witness it first hand. 
-						I got to participate in 1989 World Games in Karlsruhe, for skating, and played guitar in a number of bars and clubs chasing the Rock Star dream for a couple of years.
-						Now I spend as much time as I can with my family and support all the things they like to do. 
-						These day’s when I have spare time I like to sit and practice various computer languages, just to see what I can make. 
-						Professionally I have a number of skills to offer and have vast amounts of experience. 
-						I volunteer for non-profit work. In that roll I volunteer my time to assist in writing grants and teaching (what I know) 
-						to children that are interested in learning basic computer skills and even some programming. Ruby for Kids for the win.						
-						</p>
-				  </div>
-
+				<div class="about">
+					<P>
+					I was born in a small town in Indiana, being from a military family we moved to a number of bases. 
+					My teen years were spent in Karlsruhe Germany. I keep wanting to say West Germany, because that is what it was while i was living there. 
+					I remember when the Berlin Wall came crashing down in 1989. I had a front row seat to a huge milestone in history and was able to witness it first hand. 
+					I got to participate in 1989 World Games in Karlsruhe, for skating, and played guitar in a number of bars and clubs chasing the Rock Star dream for a couple of years.
+					</P>
+					<p>	
+					Now I spend as much time as I can with my family and support all the things they like to do. 
+					These day's when I have spare time I like to sit and practice various computer languages, just to see what I can make. 
+					Professionally I have a number of skills to offer and have vast amounts of experience. 
+					I volunteer for non-profit work. In that roll I volunteer my time to assist in writing grants and teaching (what I know) 
+					to children that are interested in learning basic computer skills and even some programming. Ruby for Kids for the win.
+					</p>
+				</div>
+				<p><h3><span style="color: rgb(78, 78, 255)">Code Assassin</span></p></h3>
+				<!-- <p><span class="assassin">Code Assassin</span></p> -->
 			</div>
 		</section>
+
 		<section id="contact">
 			<div class="section-inner">
-				<h3>Contact</h3>
+				<h2>Contact</h2>
 				<form action="/action_page.php">
 					<label for="fname">First name:</label><br>
 					<input type="text" id="fname" name="fname" value="John"><br>
@@ -61,20 +71,19 @@
 					<input type="submit" value="Submit">
 				  </form> 
 				<p>
-					A contact form will be a future feature
+					<span class="bold">contact form will be a future feature</span>
 				</p>
 			</div>
-		</section>		
+		</section>
+
 		<section id="portfolio">
 			<div class="section-inner"> 
-				<h3>Portfolio</h3>
+				<h2>Portfolio</h2>
 					<p>
-						Will add flex card in here in a future feature.
+						<span class="italic">Will add flex card in here in a future feature.</span>
 					</p>
 			</section>
-		</div>
-			</div>
-		</section>
+
 		<section id="resume">
 			<div class="section-inner">
 				<h2>resume</h2>
@@ -82,6 +91,7 @@
 			</div>
 		</section>
 	</main>
+
 	<footer>
 		© Copyright www.BrianGurtz.com 2022
 	</footer>

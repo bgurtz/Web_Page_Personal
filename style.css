@@ -12,7 +12,7 @@ header {
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: #eee;
+    background-color: rgb(185, 184, 184);
 }
 
 header * {
@@ -27,6 +27,33 @@ header ul {
 header li {
     margin-left: 20px;
 }
+
+@font-face {
+    font-family: custom-font;
+    src: url(assets/fonts/Sketch.ttf);
+  }
+
+.assassin {
+    font-family: custom-font;
+    color: rgb(161, 161, 168);
+    font-size: 40px;
+    text-align: center;   
+}
+
+.bold {
+    font-weight: bold;
+    color: rgb(79, 79, 80);
+    font-size: 20px;
+    text-align: center;   
+}
+
+.italic {
+    font-style: italic;
+    color: rgb(79, 79, 80);
+    font-size: 20px;
+    text-align: center;   
+}
+
 
 section {
     height: 100vh;
@@ -53,7 +80,7 @@ footer {
 }
 
 #hero h1 {
-    font-size: 48px;
+    font-size: 46px;
 }
 
 section h2 {
@@ -61,15 +88,35 @@ section h2 {
 }
 
 section h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
-p {
+.hero {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600px;
+    color: gray;
+    word-wrap:break-word;
+  }
+
+  .about {
     font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    color: black;
+    word-wrap:break-word;
   }
 
 header a {
     text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
     color: black;
 }
 
@@ -90,21 +137,25 @@ header a {
 
 
 #hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('http://briangurtz.com/wp-content/themes/canuck/images/headerdefault.jpg');
+    background-image: linear-gradient(rgba(255, 230, 191, 0.75),rgba(255,255,255,0.75));
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+    background-image: linear-gradient(rgba(195, 242, 250, 0.75),rgba(255,255,255,0.75));
 }
 
 #contact {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
+    background-image: linear-gradient(rgba(214, 213, 213, 0.75),rgba(255,255,255,0.75));
 }
 
 #portfolio {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1558368782-f5301dcfb9bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80');
+    background-image: linear-gradient(rgba(221, 255, 217, 0.952),rgba(255,255,255,0.75));
 }
 
 #resume {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1535172329665-65d9262d55a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2002&q=80');
+    background-image: linear-gradient(rgba(229, 206, 248, 0.75),rgba(255,255,255,0.75));
 }
+
+/* # {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('');
+} */

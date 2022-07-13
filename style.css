@@ -12,7 +12,7 @@ header {
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: rgb(185, 184, 184);
+    background-color: rgb(184, 185, 184);
 }
 
 header * {
@@ -28,6 +28,10 @@ header li {
     margin-left: 20px;
 }
 
+header li a:hover {
+    color: crimson;
+}
+
 @font-face {
     font-family: custom-font;
     src: url(assets/fonts/Sketch.ttf);
@@ -40,20 +44,39 @@ header li {
     text-align: center;   
 }
 
-.bold {
+span.bold {
     font-weight: bold;
     color: rgb(79, 79, 80);
     font-size: 20px;
     text-align: center;   
 }
 
-.italic {
+span.italic {
     font-style: italic;
     color: rgb(79, 79, 80);
     font-size: 20px;
     text-align: center;   
 }
 
+.fade-in-image { 
+    animation: fadeIn 5s; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 section {
     height: 100vh;
@@ -62,7 +85,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
@@ -75,12 +97,14 @@ section {
 }
 
 footer {
+    background-color: rgb(184, 185, 184);
     text-align: center;
     padding: 50px;
 }
 
 #hero h1 {
-    font-size: 46px;
+    font-size: 42px;
+    color: black;
 }
 
 section h2 {
@@ -96,11 +120,11 @@ section h3 {
     font-size: 24px;
     text-align: center;
     max-width: 600px;
-    color: gray;
+    color: rgb(78, 78, 78);
     word-wrap:break-word;
   }
 
-  .about {
+.about {
     font-size: 18px;
     text-align: center;
     max-width: 800px;
@@ -137,25 +161,21 @@ p {
 
 
 #hero {
-    background-image: linear-gradient(rgba(255, 230, 191, 0.75),rgba(255,255,255,0.75));
+    background-image: linear-gradient(rgba(185, 185, 185, 0.75),rgba(185, 185, 185, 0.75)), url('/assets/images/bg_background.jpg');
 }
 
 #about {
-    background-image: linear-gradient(rgba(195, 242, 250, 0.75),rgba(255,255,255,0.75));
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('/assets/images/eagle.jpg');
 }
 
 #contact {
-    background-image: linear-gradient(rgba(214, 213, 213, 0.75),rgba(255,255,255,0.75));
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('/assets/images/Seti.jpg');
 }
 
 #portfolio {
-    background-image: linear-gradient(rgba(221, 255, 217, 0.952),rgba(255,255,255,0.75));
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('/assets/images/hard_drive.gif');
 }
 
 #resume {
-    background-image: linear-gradient(rgba(229, 206, 248, 0.75),rgba(255,255,255,0.75));
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('/assets/images/resume.jpg');
 }
-
-/* # {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('');
-} */

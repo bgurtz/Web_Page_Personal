@@ -8,7 +8,8 @@
 	<meta name="author" content="Brian Gurtz">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/Bg-Logo" href="assets/images/bg_logo.jpg" alt="BG-Logo">
+    <link rel="icon" type="image/Bg-Logo" href="assets/images/bg_logo.jpg">
+	<title>Brian Gurtz</title> 
 </head>
 <!-- In the Header tag you will find a list that has 5 links to 5 pages of this site. 
 	 Added images to the assets file. The avatar will now be clickable and take the user to the resume page.  -->
@@ -22,6 +23,7 @@
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#resume">Resume</a></li>
+				<li><a href="login.html">Login</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,12 +31,15 @@
 		<!-- Below is the landing section of the page when the user first goes to the site.  -->
 		<section id="hero">
 			<div class="section-inner">
-				<a href="#resume"><img src="assets/images/brian.jpg" alt="Me" class="profile-img"></a>
+				<div class="fade-in-image">
+					 <a href="#resume"><img src="assets/images/brian.jpg" alt="Me" class="profile-img"></a>
+				</div>
 				<h1>Hi, I'm Brian Gurtz</h1>
 				<div class="hero">
 					A dynamic, results-oriented person offering focused leadership and drive.
 					Consistently achieving performance goals through enthusiasm, tenacity and initiative.
 				</div>
+			</div>
 		</section>
 		<!-- This section is the about me page that has some general information about my history and hobbies. -->
 		<section id="about">
@@ -55,9 +60,8 @@
 					to children that are interested in learning basic computer skills and even some programming. Ruby for Kids for the win.
 					</p>
 				</div>
-				<p><h3><span style="color: rgb(78, 78, 255)">Code Assassin</span></p></h3>
-				<img src="/assets/images/assassin_logo2.png" alt="Assassin Logo" width="150" height="200">
-				<!-- <p><span class="assassin">Code Assassin</span></p> -->
+				<p><span class="assassin" style="color: rgb(78, 78, 255)">Code Assassin</span></p>
+				<img src="/assets/images/assassin_logo2.png" alt="Assassin Logo" width="75" height="125">
 			</div>
 		</section>
 
@@ -72,7 +76,7 @@
 					<input type="submit" value="Submit">
 				  </form> 
 				<p>
-					<span class="bold">contact form will be a future feature</span>
+					<span class="bold italic">A contact form is a future feature of the site.</span>
 				</p>
 			</div>
 		</section>
@@ -80,14 +84,13 @@
 		<section id="portfolio">
 			<div class="section-inner"> 
 				<h2>Portfolio</h2>
-					<p>
-						<span class="italic">Will add flex card in here in a future feature.</span>
-					</p>
-			</section>
+					<p><span class="italic" style="color: red">Will add flex card in here in a future feature.</span></p>
+			</div>
+		</section>
 
 		<section id="resume">
 			<div class="section-inner">
-				<h2>resume</h2>
+				<h2>Resume</h2>
 				<p>Future feature will be a viewable and downloadable resume. </p>				
 			</div>
 		</section>

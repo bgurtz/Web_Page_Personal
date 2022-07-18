@@ -165,22 +165,70 @@ section h3 {
 	word-wrap:break-word;
 }
 
-/*********************************************** Flex Cards for Portfolio Section *********************************************/
-
-.cards {
-	display: flex;
-	justify-content: space-between;
+.portfolio {
+	font-size: 18px;
+	text-align: center;
+	max-width: 800px;
+	color: black;
+	word-wrap:break-word;
 }
 
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+/*********************************************** Table Section *********************************************/
+table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color: coral;}
+
+/*********************************************** Table for the Portfolio Section *********************************************/
+
+.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 170px;
+}
+  
+.gallery:hover {
+	border: 1px solid #777;
+}
+  
+.gallery img {
+	width: 100%;
+	height: auto;
+}
+  
+.desc {
+	padding: 15px;
+	text-align: center;
 }
 
-.card {
-	flex: 0 1 24%;
+/*********************************************** skills bar for Resume Section *********************************************/
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
 }
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.fd {width: 65%; background-color: #f44336;}
+.pg {width: 60%; background-color: #808080;}
 
 /*********************************************** Hero Page's Background Picture Section *********************************************/
 #hero {
@@ -205,9 +253,11 @@ section h3 {
 
 /*********************************************** Footer Section *********************************************/
 footer {
+	position: relative;
+	bottom: 0;
 	background-color: rgb(184, 185, 184);
 	text-align: center;
-	padding: 50px;
+	padding: 20px;
 }
 
 /*************************************************************************************************************************/
@@ -225,7 +275,7 @@ body.firstpage{
 
 #main-holder {
 	width: 50%;
-	height: 70%;
+	height: 100%;
 	display: grid;
 	justify-items: center;
 	align-items: center;

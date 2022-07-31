@@ -67,17 +67,73 @@
 		<!-- I will need to add a contact form here - email & maybe text mesasge -->
 		<section id="contact">
 			<div class="contact">
-				<h2>Contact</h2>
-				<form action="/action_page.php">
-					<label for="fname">First name:</label><br>
-					<input type="text" id="fname" name="fname" value="John"><br>
-					<label for="lname">Last name:</label><br>
-					<input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+				<form accept-charset="UTF-8" action="http://ss1.ciwcertified.com/cgi-bin/process.pl" autocomplete="off" method="GET" target="_blank">
+
+					<fieldset>					
+					<legend>Your Name:</legend>
+					First name:<br>
+					<input type="text" name="firstname"><br>
+					Last name:<br>
+					<input type="text" name="lastname"><br>					
+					</fieldset>
+					
+					<fieldset>					
+					<legend>Reason for Contact:</legend>
+					I am contacting you for:<br>
+					<input type="radio" name="Contact" value="Programming">Programming<br>
+					<input type="radio" name="Contact" value="Job Offer">Job Offer<br>
+					<input type="radio" name="Contact" value="Just to say Hi!">Just to say Hi!<br>					
+					</fieldset>
+					
+					<fieldset>					
+					<legend>Programing languages:</legend>
+					What programming languages do you like or need help with?:<br>
+					<input type="checkbox" name="languages" value="Ruby on Rails">Ruby on Rails<br>
+					<input type="checkbox" name="languages" value="Python / Django">Python / Django<br>
+					<input type="checkbox" name="languages" value="Flutter / Dart">Flutter / Dart<br>
+					<input type="checkbox" name="languages" value="C# / DotNet / Razor Pages">C# / DotNet / Razor Pages<br>
+					<input type="checkbox" name="languages" value="C# with Unity">C# with Unity<br>					
+					</fieldset>
+					
+					<fieldset>					
+					<legend>Best time to contact.</legend>
+					Contact me:<br>
+					<select name="time">
+						<option value="">Pick one</option>
+					   <option value="Morning">Morning</option>
+					   <option value="Mid-Morning">Mid-Morning</option>
+					   <option value="Early Afternoon">Early Afternoon</option>
+					   <option value="Afternoon">Afternoon</option>
+					</select>					
+					</fieldset>
+					
+					<fieldset>					
+					<legend>Editor:</legend>
+					What editor do you use / like?<br>
+					<select name="hobbies" multiple>
+					   <option value="Visual Studio Code">VS Code</option>
+					   <option value="Atom">Atom</option>
+					   <option value="Sublime">Sublime</option>
+					   <option value="Android Studio">Android Studio</option>
+					   <option value="Visual Studio">Visual Studio</option>
+					</select>					
+					</fieldset>
+					
+					<fieldset>				
+					<legend>What can I help with:</legend>
+					<textarea name="comments" cols="80" rows="8" style="text-align:left; overflow:auto; border:3px outset #000000;" >	
+					</textarea>					
+					</fieldset>
+					
+					<fieldset>					
+					<legend>Submit Your Form:</legend>
 					<input type="submit" value="Submit">
-				  </form> 
-				<p>
-					<span class="bold italic">A contact form is a future feature of the site.</span>
-				</p>
+					<input type="reset" value="Reset">					
+					</fieldset>
+					
+					</form>
+
 			</div>
 		</section>
 		<!-- Couple of samples of apps, not usre if I will add pages to each -->
@@ -120,13 +176,14 @@
 
 		<section id="resume">
 			<div class="section-inner">
-				<h2>Hoverable Table</h2>
+				<h2>Resume</h2>
 
-				<p>Move the mouse over the table rows to see the effect.</p>
+				<p>Table with Skills bar</p>
 				
-				<table>
+				<table style="width: 500px;">
+				<caption>skills knowledge and abilities</caption>
 				  <tr>
-					<th>Skill</th>
+					<th style="width:30%;">Skill</th>
 				  </tr>
 				  <tr>
 					<td>
